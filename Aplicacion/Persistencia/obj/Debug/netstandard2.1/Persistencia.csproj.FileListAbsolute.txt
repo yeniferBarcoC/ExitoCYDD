@@ -10,3 +10,15 @@ D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoE
 D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.csproj.CopyComplete
 D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.dll
 D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.pdb
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\bin\Debug\netstandard2.1\Persistencia.deps.json
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\bin\Debug\netstandard2.1\Persistencia.dll
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\bin\Debug\netstandard2.1\Persistencia.pdb
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\bin\Debug\netstandard2.1\Dominio.dll
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\bin\Debug\netstandard2.1\Dominio.pdb
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.csprojAssemblyReference.cache
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.AssemblyInfo.cs
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.csproj.CopyComplete
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.dll
+C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Persistencia\obj\Debug\netstandard2.1\Persistencia.pdb

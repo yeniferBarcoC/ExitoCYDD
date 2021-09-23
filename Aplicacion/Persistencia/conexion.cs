@@ -7,13 +7,13 @@ namespace Persistencia
 {
     public class conexion : DbContext
     {
-        public DbSet <Empleado> empleados {get; set;}
+        public DbSet <Empleados> empleados {get; set;}
 
-        public DbSet <Factura> facturas {get; set;}
+        public DbSet <Facturas> facturas {get; set;}
 
         public DbSet <Producto> productos {get; set;}
 
-        public DbSet <Consola> consolas {get; set;}
+        public DbSet <ConsolasP> consolas {get; set;}
 
         public DbSet <Controles> controles {get; set;}
 
