@@ -1,0 +1,9 @@
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
