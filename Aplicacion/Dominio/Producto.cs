@@ -21,6 +21,7 @@ namespace Dominio
         public string FechaVenta{get;set;}
         public double PrecioCompra{get;set;}
         public double PrecioVenta{get;set;}
+        public TipoProducto TipoProducto {get; set;}
 
         
     }

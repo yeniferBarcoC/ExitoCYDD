@@ -9,6 +9,14 @@ namespace Consola
     {
         static void Main(string[] args)
         {
+            RepositorioEmpleados repositorioEmpleados = new RepositorioEmpleados();
+
+            //repositorioEmpleados.guardarEmpleado(empleado);
+        }
+
+        public static void guardarEmpleado()
+        {
+
             /*Dominio em = new Dominio.Empleado();
             em.Nombre = "Johan";
             Conexion conn = new Conexion();

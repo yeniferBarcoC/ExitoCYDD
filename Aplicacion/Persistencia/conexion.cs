@@ -7,17 +7,17 @@ namespace Persistencia
 {
     public class conexion : DbContext
     {
-        public DbSet <Empleados> empleados {get; set;}
+        DbSet <Empleados> empleados {get; set;}
 
-        public DbSet <Facturas> facturas {get; set;}
+         DbSet <Facturas> facturas {get; set;}
 
-        public DbSet <Producto> productos {get; set;}
+         DbSet <Producto> productos {get; set;}
 
-        public DbSet <ConsolasP> consolas {get; set;}
+         DbSet <ConsolasP> consolas {get; set;}
 
-        public DbSet <Controles> controles {get; set;}
+         DbSet <Controles> controles {get; set;}
 
-        public DbSet <VideoJuego> videoJuegos {get; set;}
+         DbSet <VideoJuego> videoJuegos {get; set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if(!optionsBuilder.IsConfigured){
