@@ -9,7 +9,7 @@ namespace Dominio
 
 
         public Empleados Empleados {get;set;}
-        public Producto producto {get; set;}
-        public List<Producto> listaProductos {get;set;}
+        public Producto Producto {get; set;}
+        public List<Producto> ListaProductos {get;set;}
     }
 }

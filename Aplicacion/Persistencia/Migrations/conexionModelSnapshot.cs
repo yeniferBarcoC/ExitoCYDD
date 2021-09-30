@@ -52,7 +52,7 @@ namespace Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("empleados");
+                    b.ToTable("Empleados");
                 });
 
             modelBuilder.Entity("Dominio.Facturas", b =>
@@ -65,11 +65,16 @@ namespace Persistencia.Migrations
                     b.Property<int?>("EmpleadosId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProductoId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("EmpleadosId");
 
-                    b.ToTable("facturas");
+                    b.HasIndex("ProductoId");
+
+                    b.ToTable("Facturas");
                 });
 
             modelBuilder.Entity("Dominio.Producto", b =>
@@ -98,11 +103,14 @@ namespace Persistencia.Migrations
                     b.Property<double>("PrecioVenta")
                         .HasColumnType("float");
 
+                    b.Property<int>("TipoProducto")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("FacturasId");
 
-                    b.ToTable("productos");
+                    b.ToTable("Productos");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Producto");
                 });
@@ -185,19 +193,25 @@ namespace Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("EmpleadosId");
 
+                    b.HasOne("Dominio.Producto", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId");
+
                     b.Navigation("Empleados");
+
+                    b.Navigation("Producto");
                 });
 
             modelBuilder.Entity("Dominio.Producto", b =>
                 {
                     b.HasOne("Dominio.Facturas", null)
-                        .WithMany("Producto")
+                        .WithMany("ListaProductos")
                         .HasForeignKey("FacturasId");
                 });
 
             modelBuilder.Entity("Dominio.Facturas", b =>
                 {
-                    b.Navigation("Producto");
+                    b.Navigation("ListaProductos");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Persistencia;
 using Dominio;
 
@@ -14,31 +15,29 @@ namespace Consola
             return conexion1.Empleados.Where(e => e.TipoEmpleado == TipoEmpleado.ADMINISTRADOR_SISTEMA).ToList();
         }
          public void guardarEmpleado (Empleados empleado){
-             conexion1.Empleados.Add(empleado);
-             conexion1.SaveChanges();
+            conexion1.Empleados.Add(empleado);
+            conexion1.SaveChanges();
          }
          public void eliminarEmpleado (int id){
-             var empleado = conexion1.Empleados.First(e => e.Id == id);
-             conexion1.Empleados.Remove(empleado);
-             conexion1.SaveChanges();
+            var empleado = conexion1.Empleados.First(e => e.Id == id);
+            conexion1.Empleados.Remove(empleado);
+            conexion1.SaveChanges();
          }
-         public Empleados actualizarEmpleado (Empleados empleado){
-             var empleadoBusqueda = conexion1.Empleados.First(e => e.Id == empleados.Id);
-             empleadoBusqueda.Cedula = empleado.Cedula;
-             empleadoBusqueda.Codigo = empleado.Codigo;
-             empleadoBusqueda.Nombre = empleado.Nombre;
-             empleadoBusqueda.Apellido = empleado.Apellido;
-             empleadoBusqueda.Sucursal = empleado.Sucursal;
-             empleadoBusqueda.Usuario = empleado.Usuario;
-             empleadoBusqueda.Contrasenna = empleado.Contrasenna;
-             empleadoBusqueda.TipoEmpleado = empleado.TipoEmpleado;
-             conexiones.SaveChanges();
-
-             return empleadoBusqueda;
+         public void actualizarEmpleado (Empleados empleado){
+            var empleadoBusqueda = conexion1.Empleados.First(e => e.Id == empleado.Id);
+            empleadoBusqueda.Cedula = empleado.Cedula;
+            empleadoBusqueda.Codigo = empleado.Codigo;
+            empleadoBusqueda.Nombre = empleado.Nombre;
+            empleadoBusqueda.Apellido = empleado.Apellido;
+            empleadoBusqueda.Sucursal = empleado.Sucursal;
+            empleadoBusqueda.Usuario = empleado.Usuario;
+            empleadoBusqueda.Contrasenna = empleado.Contrasenna;
+            empleadoBusqueda.TipoEmpleado = empleado.TipoEmpleado;
+            conexion1.SaveChanges();
          }
          public Empleados consultarEmpleadoPorCedula (string cedula){
-             var empleadoBusqueda = conexion1.Empleados.First(e => e.Cedula == empleados.Cedula);
-             return empleadoBusqueda;
+            var empleadoBusqueda = conexion1.Empleados.First(e => e.Cedula == cedula);
+            return empleadoBusqueda;
          }
 
     }

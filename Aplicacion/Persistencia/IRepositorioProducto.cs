@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 using Dominio;
 
 namespace Persistencia
@@ -8,7 +9,7 @@ namespace Persistencia
          public List<Producto> consultarTodosAdmin();
          public void guardarProducto (Producto producto);
          public void eliminarProducto (int id);
-         public Producto actualizarProducto (Producto producto);
+         public void actualizarProducto (Producto producto);
          public Producto consultarProductoPorPrecioVenta (double precioVenta); 
     }
 }

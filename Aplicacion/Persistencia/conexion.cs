@@ -1,4 +1,4 @@
-//using System;
+using System;
 //using System.Reflection.Metadata;
 using Microsoft.EntityFrameworkCore;
 using Dominio;
@@ -7,17 +7,17 @@ namespace Persistencia
 {
     public class conexion : DbContext
     {
-        DbSet <Empleados> empleados {get; set;}
+        public DbSet <Empleados> Empleados {get; set;}
 
-         DbSet <Facturas> facturas {get; set;}
+        public DbSet <Facturas> Facturas {get; set;}
 
-         DbSet <Producto> productos {get; set;}
+        public DbSet <Producto> Productos {get; set;}
 
-         DbSet <ConsolasP> consolas {get; set;}
+        public DbSet <ConsolasP> Consolas {get; set;}
 
-         DbSet <Controles> controles {get; set;}
+        public DbSet <Controles> Controles {get; set;}
 
-         DbSet <VideoJuego> videoJuegos {get; set;}
+        public DbSet <VideoJuego> VideoJuegos {get; set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if(!optionsBuilder.IsConfigured){

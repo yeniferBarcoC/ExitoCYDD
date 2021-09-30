@@ -1,11 +1,6 @@
-//using System.Data;
 using System;
 using System.Globalization;
 using System.Collections.Generic;
-//using System.Xml.Xsl.Runtime;
-//using DataSetDateTime;
-//using mscorlib.dll;
-//using System.Runtime.dll;
 
 namespace Dominio
 {

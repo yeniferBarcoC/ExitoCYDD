@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Persistencia;
 using Dominio;
 
@@ -10,19 +11,19 @@ namespace Consola
         conexion conexiones = new conexion();
 
         public List<Producto> consultarTodosAdmin(){
-            return conexiones.Producto.Where(e => e.TipoProducto == TipoProducto.CONSOLAS).ToList();
+            return conexiones.Productos.Where(e => e.TipoProducto == TipoProducto.CONSOLAS).ToList();
         }
         public void guardarProducto (Producto producto){
-             conexiones.Producto.Add(producto);
+             conexiones.Productos.Add(producto);
              conexiones.SaveChanges();
          }
         public void eliminarProducto (int id){
-            var producto = conexiones.Producto.First(p => p.Id == id);
-            conexiones.Producto.Remove(producto);
+            var producto = conexiones.Productos.First(p => p.Id == id);
+            conexiones.Productos.Remove(producto);
             conexiones.SaveChanges();
         }
-        public Producto actualizarProducto (Producto producto){
-            var productoBusqueda = conexiones.Producto.First(p => p.Id == producto.Id);
+        public void actualizarProducto (Producto producto){
+            var productoBusqueda = conexiones.Productos.First(p => p.Id == producto.Id);
              productoBusqueda.FechaCompra = producto.FechaCompra;
              productoBusqueda.FechaVenta = producto.FechaVenta;
              productoBusqueda.PrecioCompra = producto.PrecioCompra;
@@ -53,11 +54,9 @@ namespace Consola
              }*/
 
              conexiones.SaveChanges();
-
-             return productoBusqueda;
         }
         public Producto consultarProductoPorPrecioVenta (double precioVenta){
-            var productoBusqueda = conexiones.Producto.First(p => p.PrecioVenta == Producto.precioVenta);
+            var productoBusqueda = conexiones.Productos.First(p => p.PrecioVenta == precioVenta);
             return productoBusqueda;
         }
     }

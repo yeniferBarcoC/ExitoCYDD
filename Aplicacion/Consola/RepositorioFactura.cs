@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Persistencia;
 using Dominio;
 
@@ -7,31 +8,29 @@ namespace Consola
 {
     public class RepositorioFactura : IRepositorioFactura
     {
-        conexion conexiones = new conexion();
+        conexion conexion2 = new conexion();
 
-        public List<Facturas> consultarTodosAdmin(){
-            return conexiones.Facturas.Where(f => f.Id == Id).ToList();
-        }
+        /*public List<Facturas> consultarTodosAdmin(){
+            return conexion2.Facturas.Where(f => f.Id == Facturas.Id).ToList(); 
+        }*/
         public void guardarFactura (Facturas facturas){
-            conexiones.Facturas.Add(facturas);
-            conexiones.SaveChanges();
+            conexion2.Facturas.Add(facturas);
+            conexion2.SaveChanges();
         }
         public void eliminarFactura (int id){
-            var facturas = conexiones.Facturas.First(f => f.Id == id);
-            conexiones.Facturas.Remove(facturas);
-            conexiones.SaveChanges();
+            var facturas = conexion2.Facturas.First(f => f.Id == id);
+            conexion2.Facturas.Remove(facturas);
+            conexion2.SaveChanges();
         }
-        public Facturas actualizarFactura (Facturas facturas){
-            var facturaBusqueda = conexiones.Facturas.First(f => f.Id == facturas.Id);
+        public void actualizarFactura (Facturas facturas){
+            var facturaBusqueda = conexion2.Facturas.First(f => f.Id == facturas.Id);
              facturaBusqueda.Empleados = facturas.Empleados;
              facturaBusqueda.Producto = facturas.Producto;
-             facturaBusqueda.listaProductos = facturas.listaProductos;
-             conexiones.SaveChanges();
-
-             return facturaBusqueda;
+             facturaBusqueda.ListaProductos = facturas.ListaProductos;
+             conexion2.SaveChanges();
         }
-        public Facturas consultarFacturaPorEmpleado (string empleado){
-            var facturaBusqueda = conexiones.Facturas.First(f => f.Empleados.empleado == Facturas.Empleado);
+        public Facturas consultarFacturaPorId (int id){
+            var facturaBusqueda = conexion2.Facturas.First(f => f.Id == id);
             return facturaBusqueda;
         }
     }
