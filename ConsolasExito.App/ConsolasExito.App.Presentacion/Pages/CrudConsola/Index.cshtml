@@ -1,0 +1,108 @@
+@page
+@model ConsolasExito.App.Presentacion.Pages.CrudConsola.IndexModel
+
+@{
+    ViewData["Title"] = "Consolas";
+}
+
+<h1>Consolas</h1>
+
+<p>
+    <a asp-page="Create">Agregar consola</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].Version)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].Fabricante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].CapacidadAlmacenamiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].TipoAlmacenamiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].VelocidadRam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].VelocidadProcesamiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].NumeroControles)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].FechaCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].FechaVenta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].PrecioCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].PrecioVenta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consola[0].TipoProducto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Consola) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fabricante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapacidadAlmacenamiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoAlmacenamiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VelocidadRam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VelocidadProcesamiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroControles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaVenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoProducto)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editas</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

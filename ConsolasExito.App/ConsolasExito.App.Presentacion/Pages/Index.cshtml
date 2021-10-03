@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Grupo Exito";
+}
+
+<link rel="stylesheet" href="~/css/index.css" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+<body id=inicio>
+
+    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index.cshtml'">
+
+    <div id=div_inicio class="container">
+        <h1 id="Titulo_inicio" class="d">¡Bienvenidos a Grupo Exito!</h1>
+        <a id="button_inicio" type="button" class="btn btn-warning"
+            asp-page="/Login">Continuar</a>
+    </div>
+</body>
+    

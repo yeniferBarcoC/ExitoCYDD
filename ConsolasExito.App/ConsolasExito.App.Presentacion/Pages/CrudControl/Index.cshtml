@@ -1,0 +1,66 @@
+@page
+@model ConsolasExito.App.Presentacion.Pages.CrudControl.IndexModel
+
+@{
+    ViewData["Title"] = "Controles";
+}
+
+<h1>Controles</h1>
+
+<p>
+    <a asp-page="Create">Agregar un control</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Control[0].TipoControl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Control[0].FechaCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Control[0].FechaVenta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Control[0].PrecioCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Control[0].PrecioVenta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Control[0].TipoProducto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Control) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoControl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaVenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoProducto)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,9 @@
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.deps.json
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.dll
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.pdb
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.csprojAssemblyReference.cache
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.AssemblyInfo.cs
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.dll
+C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.pdb

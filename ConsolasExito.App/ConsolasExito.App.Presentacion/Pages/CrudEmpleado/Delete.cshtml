@@ -1,0 +1,70 @@
+@page
+@model ConsolasExito.App.Presentacion.Pages.CrudEmpleado.DeleteModel
+
+@{
+    ViewData["Title"] = "Borrar empleado";
+}
+
+<h1>Borrar</h1>
+
+<h3>Seguro que desea borrar?</h3>
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.Cedula)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.Cedula)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.Codigo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.Codigo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.Apellido)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.Apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.Sucursal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.Sucursal)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.Usuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.Usuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.Contrasenna)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.Contrasenna)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Empleado.TipoEmpleado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Empleado.TipoEmpleado)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Empleado.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Volver a la lista</a>
+    </form>
+</div>

@@ -1,0 +1,97 @@
+@page
+@model ConsolasExito.App.Presentacion.Pages.CrudConsola.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Consola</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.Version)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.Version)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.Fabricante)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.Fabricante)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.CapacidadAlmacenamiento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.CapacidadAlmacenamiento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.TipoAlmacenamiento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.TipoAlmacenamiento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.VelocidadRam)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.VelocidadRam)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.VelocidadProcesamiento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.VelocidadProcesamiento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.NumeroControles)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.NumeroControles)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.FechaCompra)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.FechaCompra)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.FechaVenta)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.FechaVenta)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.PrecioCompra)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.PrecioCompra)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.PrecioVenta)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.PrecioVenta)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Consola.TipoProducto)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Consola.TipoProducto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Consola.Id">Editar</a> |
+    <a asp-page="./Index">Volver a la lista</a>
+</div>

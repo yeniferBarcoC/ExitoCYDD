@@ -1,9 +1,0 @@
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\bin\Debug\netstandard2.1\Dominio.deps.json
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\bin\Debug\netstandard2.1\Dominio.dll
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\bin\Debug\netstandard2.1\Dominio.pdb
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\obj\Debug\netstandard2.1\Dominio.csprojAssemblyReference.cache
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\obj\Debug\netstandard2.1\Dominio.AssemblyInfoInputs.cache
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\obj\Debug\netstandard2.1\Dominio.AssemblyInfo.cs
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\obj\Debug\netstandard2.1\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\obj\Debug\netstandard2.1\Dominio.dll
-C:\Users\user\Downloads\ExitoCYDD-main\ExitoCYDD-main\Aplicacion\Dominio\obj\Debug\netstandard2.1\Dominio.pdb
