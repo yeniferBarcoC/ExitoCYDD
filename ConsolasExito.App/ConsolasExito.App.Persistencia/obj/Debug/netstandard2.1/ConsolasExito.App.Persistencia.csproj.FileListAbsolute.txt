@@ -10,3 +10,15 @@ C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persisten
 C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.csproj.CopyComplete
 C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.dll
 C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.pdb
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\bin\Debug\netstandard2.1\ConsolasExito.App.Persistencia.deps.json
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\bin\Debug\netstandard2.1\ConsolasExito.App.Persistencia.dll
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\bin\Debug\netstandard2.1\ConsolasExito.App.Persistencia.pdb
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.dll
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.pdb
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.csprojAssemblyReference.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.AssemblyInfoInputs.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.AssemblyInfo.cs
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.csproj.CopyComplete
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.dll
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Persistencia\obj\Debug\netstandard2.1\ConsolasExito.App.Persistencia.pdb

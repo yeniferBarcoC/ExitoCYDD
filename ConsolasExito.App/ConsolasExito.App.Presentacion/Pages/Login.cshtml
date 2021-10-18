@@ -4,24 +4,35 @@
     ViewData["Title"] = "Inicio de sesión";
 }
 
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Fuente de letra: Montserrat-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
 <link rel="stylesheet" href="~/css/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
+
 <body id=login>
-    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index.cshtml'">
+    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index'">
     <div class="seccion_login">
         <form class="pt-3 pb-3 seccion_login_2">
             <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Inicio de sesión</h1>
+
             <div class="form-floating mb-3"> 
                 <input class="form-control" id="floatingInput" placeholder="Usuario"> 
                 <label for="floatingInput">Usuario:</label>
             </div>
+            
             <div class="form-floating">            
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña"> 
                 <label for="floatingPassword">Contraseña:</label>
             </div>
-            <button id="button_ingresar" class="btn btn-outline-warning" >Ingresar</button>
-            <a href="cambiarContrasena.html" style="margin-left: 10%; margin-bottom: 1%; ">Cambiar contraseña</a> 
+            
+            <button id="button_ingresar" type="button" class="btn btn-outline-info" >Ingresar</button>
+            <a href="./CambiarContrasena/CambiarContrasena" style="margin-left: 10%; margin-bottom: 1%; ">Cambiar contraseña</a> 
             <div class="alert alert-info mensaje_alerta">
                 <strong>Recuerde:</strong><br> Para ingresar por <b><i>primera vez</i></b> al sistema, el administrador del sistema debe haber creado previamente su usuario.
                 <br>

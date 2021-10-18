@@ -5,14 +5,28 @@
     ViewData["Title"] = "Empleados";
 }
 
-<h1>Empleados</h1>
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Fuente de letra: Montserrat-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-<p>
-    <a asp-page="Create">Crear nuevo</a>
+
+<link rel="stylesheet" href="~/css/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<body id="base_de_datos">
+<h1 id="Titulo_base_datos">Empleados</h1>
+
+<p><form>
+    <a type="button"  asp-page="Create">
+        <input id="button_Crear" class="btn btn-outline-info" type="button" value="Crear nuevo">
+    </a>
+</form>
 </p>
-<table class="table">
+<table class="table table-hover table-striped">
     <thead>
-        <tr>
+        <tr class="table-light">
             <th>
                 @Html.DisplayNameFor(model => model.Empleado[0].Cedula)
             </th>
@@ -43,7 +57,7 @@
     <tbody>
 @foreach (var item in Model.Empleado) {
         <tr>
-            <td>
+            <td class="table-warning">
                 @Html.DisplayFor(modelItem => item.Cedula)
             </td>
             <td>
@@ -76,3 +90,4 @@
 }
     </tbody>
 </table>
+</body>

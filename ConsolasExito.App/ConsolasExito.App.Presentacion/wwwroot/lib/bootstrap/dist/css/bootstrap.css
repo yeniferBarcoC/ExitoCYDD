@@ -4146,6 +4146,7 @@ input[type="button"].btn-block {
 
 .navbar {
   position: relative;
+  background: rgba(253, 253, 253, 0.25);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -6588,7 +6589,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: rgba(253, 253, 253, 0.25);
 }
 
 .bg-transparent {

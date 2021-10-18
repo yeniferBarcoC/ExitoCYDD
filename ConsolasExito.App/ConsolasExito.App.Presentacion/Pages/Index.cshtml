@@ -6,15 +6,16 @@
 
 <link rel="stylesheet" href="~/css/index.css" />
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-
+<!--Fuente de letra: Montserrat-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 <body id=inicio>
 
-    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index.cshtml'">
+    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index'">
 
     <div id=div_inicio class="container">
         <h1 id="Titulo_inicio" class="d">¡Bienvenidos a Grupo Exito!</h1>
-        <a id="button_inicio" type="button" class="btn btn-warning"
+        <a id="button_inicio" type="button" class="btn btn-outline-info"
             asp-page="/Login">Continuar</a>
     </div>
 </body>

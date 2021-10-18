@@ -5,62 +5,95 @@
   	background-size: cover;
 }
 
-#Titulo_inicio{
-	height: 5%;
-	width: 30%;
-	font-size: 300%;
-	font-weight:700 ;
-}
+	#Titulo_inicio{
+		height: 5%;
+		width: 30%;
+		font-size: 300%;
+		font-weight:700 ;
+	}
 
-#logo{
-	width: 10%;
-	margin-top: 2%;
-	margin-left: 2%;
-}
-#button_inicio{
-	height: 10%;
-	width: 15%;
-	margin-top: 5%;
-	color: white;
-	border-color: white;
-	/*font-weight:700 ;*/
-	font-family: 'Montserrat';
-	box-shadow: 15px 8px 8px rgb(253,126,20);
-}
+	#Titulo_base_datos{
+		text-align: center;
+	}
 
-#button_ingresar{
-	height: 10%;
-	width: 17%;
-	margin-left: 40%;
-	margin-top: 2%;
-	color: black;
-	border-color: black;
-	font-family: 'Montserrat';
-	box-shadow: 15px 8px 8px rgb(253,126,20);
-}
+	#logo{
+		width: 10%;
+		margin-top: 0%;
+		margin-left: -9%;
+	}
+	#button_inicio{
+		height: 10%;
+		width: 15%;
+		margin-top: 5%;
+		color: white;
+		border-color: white;
+		/*font-weight:700 ;*/
+		font-family: 'Montserrat';
+		box-shadow: 15px 8px 8px rgb(253,126,20);
+	}
+
+	#button_ingresar{
+		height: 10%;
+		width: 17%;
+		margin-left: 40%;
+		margin-top: 2%;
+		color: black;
+		border-color: black;
+		font-family: 'Montserrat';
+		box-shadow: 15px 8px 8px rgb(253,126,20);
+	}
+
+	#button_cambiarcontrasena{
+		height: 10%;
+		width: 40%;
+		margin-left: 30%;
+		margin-top: 2%;
+		color: black;
+		border-color: black;
+		font-family: 'Montserrat';
+		box-shadow: 15px 8px 8px rgb(253,126,20);
+	}
+
+	#button_Crear{
+		height: 10%;
+		width: 100%;
+		margin-left: 400%;
+		margin-top: 2%;
+		color: black;
+		border-color: black;
+		font-family: 'Montserrat';
+		box-shadow: 15px 8px 8px rgb(253,126,20);
+	}
 
 #login{
 	background-image: url("../img/Fondo1.jpg");
   	background-repeat: no-repeat;
   	background-attachment: fixed;  
   	background-size: cover;
+	padding-top:0% ;
 }
 
-#div_inicio{
-	padding-top: 6%;
-	
-}
+	#div_inicio{
+		padding-top: 6%;
+		
+	}
 
-.seccion_login{
-	/*border:  1px solid black;*/
-	border-radius: 5% 5% 5% 5%;
-	margin: -8% 20% -10% 20%;
-	height: 83%;
-	padding: 2% 5% 0% 5%;
-	background: white;
-}
+	.seccion_login{
+		/*border:  1px solid black;*/
+		border-radius: 5% 5% 5% 5%;
+		margin: -8% 20% -10% 20%;
+		height: 83%;
+		padding: 2% 5% 0% 5%;
+		background: white;
+	}
 
 .mensaje_alerta{
 	margin-top: 3%;
-	font-size: small;
+}
+
+#base_de_datos{
+	background-image: url("../img/Empleado.jpg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;  
+  	background-size: cover;
 }

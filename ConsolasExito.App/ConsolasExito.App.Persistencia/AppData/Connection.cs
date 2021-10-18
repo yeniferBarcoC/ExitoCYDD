@@ -9,7 +9,7 @@ namespace ConsolasExito.App.Persistencia
     {
         
         /* Initial Catalog -> nombre base de datos */
-        private string connectionString = "Data source = (localdb)\\MSSQLLocalDB; Initial Catalog = ExitoData" ;
+        //private string connectionString =  ;
         
         /* Tablas */
         
@@ -25,7 +25,7 @@ namespace ConsolasExito.App.Persistencia
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(connectionString);
+                optionsBuilder.UseSqlServer("Data source = (localdb)\\MSSQLLocalDB; Initial Catalog = ExitoDatos");
             }
         }
     }

@@ -7,3 +7,12 @@ C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\o
 C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.dll
 C:\Users\DANIELA\Desktop\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.pdb
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.deps.json
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.dll
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\bin\Debug\netstandard2.1\ConsolasExito.App.Dominio.pdb
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.csprojAssemblyReference.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.AssemblyInfoInputs.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.AssemblyInfo.cs
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.csproj.CoreCompileInputs.cache
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.dll
+D:\Documents\Mision tic\Programación\C3 C Sharp - Desarrollo de software\GrupoExito\ExitoCYDD\ConsolasExito.App\ConsolasExito.App.Dominio\obj\Debug\netstandard2.1\ConsolasExito.App.Dominio.pdb
