@@ -15,79 +15,84 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
-<body id="base_de_datos">
-<h1 id="Titulo_base_datos">Empleados</h1>
 
-<p><form>
-    <a type="button"  asp-page="Create">
-        <input id="button_Crear" class="btn btn-outline-info" type="button" value="Crear nuevo">
-    </a>
-</form>
-</p>
-<table class="table table-hover table-striped">
-    <thead>
-        <tr class="table-light">
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].Cedula)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].Codigo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].Apellido)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].Sucursal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].Usuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].Contrasenna)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Empleado[0].TipoEmpleado)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Empleado) {
-        <tr>
-            <td class="table-warning">
-                @Html.DisplayFor(modelItem => item.Cedula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Codigo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellido)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sucursal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contrasenna)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TipoEmpleado)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<body id="base_de_datos">
+    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='../../Index'">
+    <h1 id="Titulo_base_datos">Empleados</h1>
+
+    <p>
+        <form>
+            <a type="button"  asp-page="Create">
+                <input id="button_Crear" class="btn btn-outline-info" type="button" value="Crear nuevo">
+            </a>
+        </form>
+    </p>
+    <div class="table-responsive">
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr class="table-light">
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].Cedula)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].Codigo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].Nombre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].Apellido)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].Sucursal)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].Usuario)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].Contrasenna)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Empleado[0].TipoEmpleado)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+        @foreach (var item in Model.Empleado) {
+                <tr>
+                    <td class="table-warning">
+                        @Html.DisplayFor(modelItem => item.Cedula)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Codigo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Apellido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Sucursal)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Usuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contrasenna)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoEmpleado)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
+                    </td>
+                </tr>
+        }
+            </tbody>
+        </table>
+    </div>
 </body>

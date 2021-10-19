@@ -553,6 +553,14 @@ pre code {
   margin-left: auto;
 }
 
+.container-propio {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -590,8 +598,10 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  width: auto;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
 .no-gutters {
@@ -615,6 +625,7 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 0%;
 }
 
 .col {
@@ -10003,7 +10014,7 @@ a.text-dark:hover, a.text-dark:focus {
     min-width: 992px !important;
   }
   .container {
-    min-width: 992px !important;
+    min-width: 992px;
   }
   .navbar {
     display: none;

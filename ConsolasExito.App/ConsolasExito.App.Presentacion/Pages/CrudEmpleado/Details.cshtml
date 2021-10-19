@@ -5,63 +5,78 @@
     ViewData["Title"] = "Detalles del empleado";
 }
 
-<h1>Detalles</h1>
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Fuente de letra: Montserrat-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-<div>
-    <h4>Empleado</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.Cedula)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.Cedula)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.Codigo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.Codigo)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.Nombre)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.Nombre)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.Apellido)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.Apellido)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.Sucursal)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.Sucursal)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.Usuario)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.Usuario)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.Contrasenna)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.Contrasenna)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Empleado.TipoEmpleado)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Empleado.TipoEmpleado)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.Empleado.Id">Editar</a> |
-    <a asp-page="./Index">Volver a la lista</a>
-</div>
+
+<link rel="stylesheet" href="~/css/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+<body id="ver_detalles">
+    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index'">
+    <div class="seccion_login">
+        <form class="pt-3 pb-3 seccion_login_2">
+            <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Detalle empleado</h1>
+            <dl class="row">
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.Cedula)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.Cedula)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.Codigo)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.Codigo)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.Nombre)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.Nombre)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.Apellido)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.Apellido)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.Sucursal)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.Sucursal)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.Usuario)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.Usuario)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.Contrasenna)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.Contrasenna)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Empleado.TipoEmpleado)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Empleado.TipoEmpleado)
+                    </dd>
+            </dl>
+            <div class="col-md-12" >
+                <a asp-page="./Edit" asp-route-id="@Model.Empleado.Id">Editar</a> |
+                <a asp-page="./Index">Volver a la lista</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+   

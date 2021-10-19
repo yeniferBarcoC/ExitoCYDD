@@ -5,93 +5,106 @@
     ViewData["Title"] = "Detalles";
 }
 
-<h1>Detalles</h1>
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Fuente de letra: Montserrat-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-<div>
-    <h4>Consola</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.Nombre)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.Nombre)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.Version)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.Version)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.Fabricante)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.Fabricante)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.CapacidadAlmacenamiento)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.CapacidadAlmacenamiento)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.TipoAlmacenamiento)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.TipoAlmacenamiento)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.VelocidadRam)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.VelocidadRam)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.VelocidadProcesamiento)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.VelocidadProcesamiento)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.NumeroControles)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.NumeroControles)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.FechaCompra)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.FechaCompra)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.FechaVenta)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.FechaVenta)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.PrecioCompra)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.PrecioCompra)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.PrecioVenta)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.PrecioVenta)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Consola.TipoProducto)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Consola.TipoProducto)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.Consola.Id">Editar</a> |
-    <a asp-page="./Index">Volver a la lista</a>
-</div>
+
+<link rel="stylesheet" href="~/css/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+<body id="ver_detalles">
+    <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index'">
+    <div class="seccion_login">
+        <form class="pt-3 pb-3 seccion_login_2">
+            <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Detalle Consola</h1>
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.Nombre)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.Nombre)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.Version)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.Version)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.Fabricante)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.Fabricante)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.CapacidadAlmacenamiento)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.CapacidadAlmacenamiento)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.TipoAlmacenamiento)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.TipoAlmacenamiento)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.VelocidadRam)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.VelocidadRam)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.VelocidadProcesamiento)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.VelocidadProcesamiento)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.NumeroControles)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.NumeroControles)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.FechaCompra)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.FechaCompra)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.FechaVenta)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.FechaVenta)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.PrecioCompra)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.PrecioCompra)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.PrecioVenta)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.PrecioVenta)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Consola.TipoProducto)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Consola.TipoProducto)
+                </dd>
+            </dl>
+            <div class="col-md-12" >
+                <a asp-page="./Edit" asp-route-id="@Model.Consola.Id">Editar</a> |
+                <a asp-page="./Index">Volver a la lista</a>
+            </div>
+        </form>
+    </div>
+</body>

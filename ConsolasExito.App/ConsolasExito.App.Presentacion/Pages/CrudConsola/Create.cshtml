@@ -5,89 +5,113 @@
     ViewData["Title"] = "Agregar consola";
 }
 
-<h1>Agregar</h1>
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Fuente de letra: Montserrat-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-<h4>Consola</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Consola.Nombre" class="control-label"></label>
-                <input asp-for="Consola.Nombre" class="form-control" />
-                <span asp-validation-for="Consola.Nombre" class="text-danger"></span>
+<link rel="stylesheet" href="~/css/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+<body id="crear_consola">
+    <div class="container">
+        <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='../../Index'">
+        <div class="row_propio">
+            <div class="col-sm-2 align-self-center">
+                <h1>Comprar producto</h1>
             </div>
-            <div class="form-group">
-                <label asp-for="Consola.Version" class="control-label"></label>
-                <input asp-for="Consola.Version" class="form-control" />
-                <span asp-validation-for="Consola.Version" class="text-danger"></span>
+            <div class="col-sm-2 align-self-center">
+                
             </div>
-            <div class="form-group">
-                <label asp-for="Consola.Fabricante" class="control-label"></label>
-                <input asp-for="Consola.Fabricante" class="form-control" />
-                <span asp-validation-for="Consola.Fabricante" class="text-danger"></span>
+            <div class="col-sm-8 align-self-start">
+                <div class="row pb-2 align-self-start">
+                    <div class="seccion_crear">
+                        <form class="row g-5">
+                            <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Comprar Consola</h1>
+                            <form class="needs-validation" method="post">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group col-md-3">
+                                    <label asp-for="Consola.Nombre" class="control-label"></label>
+                                    <input asp-for="Consola.Nombre" class="form-control" />
+                                    <span asp-validation-for="Consola.Nombre" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label asp-for="Consola.TipoProducto" class="control-label"></label>
+                                    <select asp-for="Consola.TipoProducto" class="form-control"></select>
+                                    <span asp-validation-for="Consola.TipoProducto" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label asp-for="Consola.Version" class="control-label"></label>
+                                    <input asp-for="Consola.Version" class="form-control" />
+                                    <span asp-validation-for="Consola.Version" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label asp-for="Consola.Fabricante" class="control-label"></label>
+                                    <input asp-for="Consola.Fabricante" class="form-control" />
+                                    <span asp-validation-for="Consola.Fabricante" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label asp-for="Consola.CapacidadAlmacenamiento" class="control-label"></label>
+                                    <input asp-for="Consola.CapacidadAlmacenamiento" class="form-control" />
+                                    <span asp-validation-for="Consola.CapacidadAlmacenamiento" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="Consola.TipoAlmacenamiento" class="control-label"></label>
+                                    <select asp-for="Consola.TipoAlmacenamiento" class="form-control"></select>
+                                    <span asp-validation-for="Consola.TipoAlmacenamiento" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label asp-for="Consola.VelocidadRam" class="control-label"></label>
+                                    <input asp-for="Consola.VelocidadRam" class="form-control" />
+                                    <span asp-validation-for="Consola.VelocidadRam" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="Consola.VelocidadProcesamiento" class="control-label"></label>
+                                    <input asp-for="Consola.VelocidadProcesamiento" class="form-control" />
+                                    <span asp-validation-for="Consola.VelocidadProcesamiento" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="Consola.FechaVenta" class="control-label"></label>
+                                    <input asp-for="Consola.FechaVenta" class="form-control" />
+                                    <span asp-validation-for="Consola.FechaVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="Consola.FechaCompra" class="control-label"></label>
+                                    <input asp-for="Consola.FechaCompra" class="form-control" />
+                                    <span asp-validation-for="Consola.FechaCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="Consola.NumeroControles" class="control-label"></label>
+                                    <input asp-for="Consola.NumeroControles" class="form-control" />
+                                    <span asp-validation-for="Consola.NumeroControles" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="Consola.PrecioCompra" class="control-label"></label>
+                                    <input asp-for="Consola.PrecioCompra" class="form-control" />
+                                    <span asp-validation-for="Consola.PrecioCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="Consola.PrecioVenta" class="control-label"></label>
+                                    <input asp-for="Consola.PrecioVenta" class="form-control" />
+                                    <span asp-validation-for="Consola.PrecioVenta" class="text-danger"></span>
+                                </div>
+                                <div class="fform-group col-md-3 ms-md-auto">
+                                    <input type="submit" value="Comprar" class="btn btn-primary" />
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <a asp-page="Index">Volver a la lista</a>
+                                </div>
+                            </form>
+                        </form>
+                    </div>
+                </div> 
             </div>
-            <div class="form-group">
-                <label asp-for="Consola.CapacidadAlmacenamiento" class="control-label"></label>
-                <input asp-for="Consola.CapacidadAlmacenamiento" class="form-control" />
-                <span asp-validation-for="Consola.CapacidadAlmacenamiento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.TipoAlmacenamiento" class="control-label"></label>
-                <select asp-for="Consola.TipoAlmacenamiento" class="form-control"></select>
-                <span asp-validation-for="Consola.TipoAlmacenamiento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.VelocidadRam" class="control-label"></label>
-                <input asp-for="Consola.VelocidadRam" class="form-control" />
-                <span asp-validation-for="Consola.VelocidadRam" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.VelocidadProcesamiento" class="control-label"></label>
-                <input asp-for="Consola.VelocidadProcesamiento" class="form-control" />
-                <span asp-validation-for="Consola.VelocidadProcesamiento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.NumeroControles" class="control-label"></label>
-                <input asp-for="Consola.NumeroControles" class="form-control" />
-                <span asp-validation-for="Consola.NumeroControles" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.FechaCompra" class="control-label"></label>
-                <input asp-for="Consola.FechaCompra" class="form-control" />
-                <span asp-validation-for="Consola.FechaCompra" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.FechaVenta" class="control-label"></label>
-                <input asp-for="Consola.FechaVenta" class="form-control" />
-                <span asp-validation-for="Consola.FechaVenta" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.PrecioCompra" class="control-label"></label>
-                <input asp-for="Consola.PrecioCompra" class="form-control" />
-                <span asp-validation-for="Consola.PrecioCompra" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.PrecioVenta" class="control-label"></label>
-                <input asp-for="Consola.PrecioVenta" class="form-control" />
-                <span asp-validation-for="Consola.PrecioVenta" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Consola.TipoProducto" class="control-label"></label>
-                <select asp-for="Consola.TipoProducto" class="form-control"></select>
-                <span asp-validation-for="Consola.TipoProducto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
+</body>
 
-<div>
-    <a asp-page="Index">Volver a la lista</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -5,55 +5,78 @@
     ViewData["Title"] = "Agregar control";
 }
 
-<h1>Crear</h1>
 
-<h4>Control</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Control.TipoControl" class="control-label"></label>
-                <input asp-for="Control.TipoControl" class="form-control" />
-                <span asp-validation-for="Control.TipoControl" class="text-danger"></span>
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Fuente de letra: Montserrat-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<link rel="stylesheet" href="~/css/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+
+<body id="crear_controles">
+    <div class="container">
+        <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='../../Index'">
+        <div class="row_propio">
+            <div class="col-sm-2 align-self-center">
+                <h1>Comprar Producto</h1>
             </div>
-            <div class="form-group">
-                <label asp-for="Control.FechaCompra" class="control-label"></label>
-                <input asp-for="Control.FechaCompra" class="form-control" />
-                <span asp-validation-for="Control.FechaCompra" class="text-danger"></span>
+            <div class="col-sm-2 align-self-center">
+                
             </div>
-            <div class="form-group">
-                <label asp-for="Control.FechaVenta" class="control-label"></label>
-                <input asp-for="Control.FechaVenta" class="form-control" />
-                <span asp-validation-for="Control.FechaVenta" class="text-danger"></span>
+            <div class="col-sm-8 align-self-start">
+                <div class="row pb-2 align-self-start">
+                    <div class="seccion_crear">
+                        <form class="row g-2">
+                            <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Comprar Controles</h1>
+                            <form method="post">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Control.TipoProducto" class="control-label"></label>
+                                    <select asp-for="Control.TipoProducto" class="form-control"></select>
+                                    <span asp-validation-for="Control.TipoProducto" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Control.TipoControl" class="control-label"></label>
+                                    <input asp-for="Control.TipoControl" class="form-control" />
+                                    <span asp-validation-for="Control.TipoControl" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Control.FechaCompra" class="control-label"></label>
+                                    <input asp-for="Control.FechaCompra" class="form-control" />
+                                    <span asp-validation-for="Control.FechaCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Control.FechaVenta" class="control-label"></label>
+                                    <input asp-for="Control.FechaVenta" class="form-control" />
+                                    <span asp-validation-for="Control.FechaVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Control.PrecioCompra" class="control-label"></label>
+                                    <input asp-for="Control.PrecioCompra" class="form-control" />
+                                    <span asp-validation-for="Control.PrecioCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Control.PrecioVenta" class="control-label"></label>
+                                    <input asp-for="Control.PrecioVenta" class="form-control" />
+                                    <span asp-validation-for="Control.PrecioVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-3 ms-md-auto">
+                                    <input type="submit" value="Comprar" class="btn btn-primary" />
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <a asp-page="Index">Volver a la lista</a>
+                                </div>
+                            </form>
+                       </form>
+                    </div>
+                </div> 
             </div>
-            <div class="form-group">
-                <label asp-for="Control.PrecioCompra" class="control-label"></label>
-                <input asp-for="Control.PrecioCompra" class="form-control" />
-                <span asp-validation-for="Control.PrecioCompra" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Control.PrecioVenta" class="control-label"></label>
-                <input asp-for="Control.PrecioVenta" class="form-control" />
-                <span asp-validation-for="Control.PrecioVenta" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Control.TipoProducto" class="control-label"></label>
-                <select asp-for="Control.TipoProducto" class="form-control"></select>
-                <span asp-validation-for="Control.TipoProducto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-page="Index">Volver a la lista</a>
-</div>
-
+</body>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

@@ -9,19 +9,8 @@ namespace ConsolasExito.App.Consolas
     {
         static void Main(string[] args)
         {
-            RepositorioEmpleado repositorioEmpleado = new RepositorioEmpleado();
-            ConsolasExito.App.Dominio.Empleado empleado = new ConsolasExito.App.Dominio.Empleado();
-           
-            empleado.Cedula = "1110";
-            empleado.Codigo = "AS-01";
-            empleado.Nombre = "Daniel";
-            empleado.Apellido = "Diaz";
-            empleado.Sucursal = "Principal";
-            empleado.Usuario = "DDDiaz";
-            empleado.Contrasenna = "1110";
-            empleado.TipoEmpleado = TipoEmpleado.EMPLEADO_VENTAS;
-
-            repositorioEmpleado.guardarEmpleado(empleado);
+            RepositorioProducto repositorioProducto = new RepositorioProducto();
+            ConsolasExito.App.Dominio.Producto producto = new ConsolasExito.App.Dominio.Producto();
             
         }
 
@@ -42,6 +31,20 @@ namespace ConsolasExito.App.Consolas
             Conn.Empleados.Add(em);
             Conn.SaveChanges();
             Console.WriteLine("El id del empleado es: " + em.Id);
+
+            RepositorioEmpleado repositorioEmpleado = new RepositorioEmpleado();
+            ConsolasExito.App.Dominio.Empleado empleado = new ConsolasExito.App.Dominio.Empleado();
+           
+            empleado.Cedula = "1110";
+            empleado.Codigo = "AS-01";
+            empleado.Nombre = "Daniel";
+            empleado.Apellido = "Diaz";
+            empleado.Sucursal = "Principal";
+            empleado.Usuario = "DDDiaz";
+            empleado.Contrasenna = "1110";
+            empleado.TipoEmpleado = TipoEmpleado.EMPLEADO_VENTAS;
+
+            repositorioEmpleado.guardarEmpleado(empleado);
         }*/
     }
 }
