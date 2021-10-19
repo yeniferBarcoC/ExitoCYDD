@@ -13,7 +13,7 @@ namespace ConsolasExito.App.Dominio
         public string Usuario {get; set;}
         public string Contrasenna {get; set;}
         public TipoEmpleado TipoEmpleado {get; set;}
-    
+        public bool PrimerIngreso {get; set;}
         public Empleado(){
           
         }
