@@ -7,7 +7,7 @@
     <title>@ViewData["Title"]</title>
     <!--Fuente de letra: Montserrat-->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 
 </head>
@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Exito</a>
+                <img id="logo_exito" src="~/img/exito.png" class="img-fluid" onclick="location.href='../../Index'">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,14 +27,10 @@
                             <li class="nav-item">
                                 <a class="btn btn-outline-info me-2" asp-area="" asp-page="/CrudEmpleado/Index">Empleados</a>
                             </li>
-
-                            <li class="nav-item">
-                                <a class="btn btn-outline-info me-2" asp-area="" asp-page="/Login">Login</a>
-                            </li>
                         </ul>
                     </div>
                     <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        <button class="btn btn-outline-info me-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                             Productos
                             <span class="caret"></span>
                         </button>
@@ -44,12 +40,18 @@
                                     asp-page="/CrudControl/Index">Controles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="dropdown-item text-dark" asp-area="" asp-page="/CrudVideoJuego/Index">Video
-                                    juegos</a>
+                                <a class="dropdown-item text-dark" asp-area="" asp-page="/CrudVideoJuego/Index">Videojuegos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="dropdown-item text-dark" asp-area=""
                                     asp-page="/CrudConsola/Index">Consolas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="btn btn-outline-info me-2" asp-area="" asp-page="/Login">Login</a>
                             </li>
                         </ul>
                     </div>

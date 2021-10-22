@@ -33,6 +33,10 @@
 		display: inline;
 	}
 
+	#logo_exito{
+		width: 74px;
+	}
+
 	#button_inicio{
 		height: 10%;
 		width: 15%;
@@ -58,8 +62,8 @@
 	#button_cambiarcontrasena{
 		height: 10%;
 		width: 50%;
-		margin-left: 30%;
-		margin-top: 2%;
+		margin-left: 25%;
+		margin-top: 1%;
 		color: black;
 		border-color: black;
 		font-family: 'Montserrat';
@@ -86,6 +90,27 @@
 		border-color: black;
 		font-family: 'Montserrat';
 		box-shadow: 15px 8px 8px rgb(253,126,20);
+	}
+
+	.button_BD{
+		display: inline-block;
+		font-weight: 400;
+		color: #212529;
+		text-align: center;
+		vertical-align: middle;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-color: transparent;
+		border: 1px solid transparent;
+		margin-right: 1px;
+		margin-left: 1px;
+		padding: 4px 4px;
+		font-size: 1rem;
+		line-height: 1.5;
+		border-radius: 0.25rem;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	}
 
 #login{
@@ -156,21 +181,21 @@
 	}
 
 #crear_consola {
-	background-image: url("../img/Consola2.jpg");
+	background-image: url("../img/Consola3.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;  
 	background-size: cover;
 }
 
 #crear_controles {
-	background-image: url("../img/control3.jpg");
+	background-image: url("../img/control6.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;  
 	background-size: cover;
 }
 
 #crear_videojuego {
-	background-image: url("../img/Videojuego.jpg");
+	background-image: url("../img/juego3.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;  
 	background-size: cover;

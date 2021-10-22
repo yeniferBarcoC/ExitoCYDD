@@ -33,7 +33,7 @@ namespace ConsolasExito.App.Presentacion.Pages
         {            
         } 
 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             Connection conn = new Connection();
             var Username = HttpContext.Session.GetString("username");
@@ -42,10 +42,12 @@ namespace ConsolasExito.App.Presentacion.Pages
 
             if(!ContrasennaNueva.Equals(RepitaContrasenna)){
                 MensajeContrasenna = "Las contraseñas no coinciden";
+                return RedirectToPage("/Login");
             }else{
                 empleado.Contrasenna = ContrasennaNueva;
                 empleado.PrimerIngreso = false;
                 conn.SaveChanges();
+                return RedirectToPage("/Index");
             }
         }
     }

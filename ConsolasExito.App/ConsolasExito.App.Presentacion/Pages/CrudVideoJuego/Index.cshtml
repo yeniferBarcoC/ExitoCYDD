@@ -92,9 +92,9 @@
                         @Html.DisplayFor(modelItem => item.TipoProducto)
                     </td>
                     <td>
-                        <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
-                        <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
-                        <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
+                        <a asp-page="./Edit" asp-route-id="@item.Id" class="button_BD btn-outline-success">Editar</a>
+                        <a asp-page="./Details" asp-route-id="@item.Id" class="button_BD btn-outline-primary">Detalles</a>
+                        <a asp-page="./Delete" asp-route-id="@item.Id" class="button_BD btn-outline-danger">Borrar</a>
                     </td>
                 </tr>
         }

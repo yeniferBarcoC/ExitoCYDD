@@ -17,33 +17,32 @@
 
 <body id=login>
     <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='Index'">
-    <div class="seccion_login">
-        <form class="pt-3 pb-3 seccion_login_2">
+    <div class="seccion_login pt-3 pb-3 seccion_login_2">
+        <!--<form class="pt-3 pb-3 seccion_login_2">-->
             <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Inicio de sesión</h1>
-
-            <div class="form-group mb-3"> 
-
-                <label class="control-label">Usuario:</label>
-                <input asp-for="Usuario" type="text" class="form-control"> 
-                <span class="text-danger">@Model.MensajeUsuario</span> 
-            </div>
-            
-            <div class="form-group">            
-                <label class="control-label">Contraseña:</label>
-                <input asp-for="Contrasenna" type="password" class="form-control">
-                <span class="text-danger">@Model.MensajeContrasenna</span> 
-            </div>
-            
-            <div class="form-group">
-                <input type="submit" value="Ingresar" class="btn btn-outline-info" id="button_cambiarcontrasena" /> 
-            </div>
-            <a href="./CambiarContrasena/CambiarContrasena" style="margin-left: 10%; margin-bottom: 1%; ">Cambiar contraseña</a> 
+            <form method="post">
+                <div class="form-floating mb-3"> 
+                    <input asp-for="Usuario" type="text" class="form-control" id="floatingInput" placeholder="Ejemplo: pepitop"> 
+                    <label for="floatingInput">Usuario:</label>
+                    <span class="text-danger">@Model.MensajeUsuario</span> 
+                </div>
+                
+                <div class="form-floating mb-3">   
+                    <input asp-for="Contrasenna" type="password" class="form-control" id="floatingInput" placeholder="1234">         
+                    <label for="floatingInput">Contraseña:</label>
+                    <span class="text-danger">@Model.MensajeContrasenna</span> 
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Ingresar" class="btn btn-outline-info" id="button_ingresar" /> 
+                </div>
+            </form>
             <div class="alert alert-info mensaje_alerta">
                 <strong>Recuerde:</strong><br> Para ingresar por <b><i>primera vez</i></b> al sistema, el administrador del sistema debe haber creado previamente su usuario.
                 <br>
                 <br>
                 La contraseña por defecto sera la cedula del empleado, pero la <b><i>primera vez</i></b> que ingrese, se le solicitara automaticamente cambio de la misma.
             </div>
-        </form>
+        <!--</form>-->
     </div>
 </body>

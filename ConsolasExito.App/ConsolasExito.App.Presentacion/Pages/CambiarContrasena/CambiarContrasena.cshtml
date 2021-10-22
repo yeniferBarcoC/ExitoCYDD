@@ -16,26 +16,26 @@
 
 <body id=login>
     <img id="logo" src="~/img/logo.png" class="img-fluid" onclick="location.href='../../Index'">
-    <div class="seccion_login">
-        <form class="pt-3 pb-1 seccion_login_2">   
-            <div class="row_propio">
+    <div class="seccion_login pt-3 pb-1 seccion_login_2">
+        <!--<form class="pt-3 pb-1 seccion_login_2">   -->
+            <form method="post">
                 <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Cambio de contraseña</h1>
-                <div class="form-group col-md-5"> 
-                    <label class="control-label">Contraseña nueva:</label>
-                    <input asp-for="ContrasennaNueva" type="password" class="form-control">
+                <div class="form-floating mb-3"> 
+                    <input asp-for="ContrasennaNueva" type="password" class="form-control" id="floatingInput" placeholder="Ejemplo: pepitop">
+                    <label for="floatingInput">Contraseña nueva:</label>
                 </div>
-                <div class="form-group col-md-7">            
-                    <label class="control-label">Ingrese de nuevo la Contraseña:</label>
-                    <input asp-for="RepitaContrasenna" type="password" class="form-control">
+                <div class="form-floating mb-3">       
+                    <input asp-for="RepitaContrasenna" type="password" class="form-control" id="floatingInput" placeholder="Ejemplo: pepitop">     
+                    <label for="floatingInput">Ingrese de nuevo la Contraseña:</label>
                     <span class="text-danger">@Model.MensajeContrasenna</span> 
                 </div>
-            </div>
-            <div class="form-group">
-                 <input type="submit" value="Cambiar contraseña" class="btn btn-outline-info" id="button_cambiarcontrasena"/> 
-            </div>
+                <div class="form-group">
+                    <input type="submit" value="Cambiar contraseña" class="btn btn-outline-info" id="button_cambiarcontrasena"/> 
+                </div>
+            </form>
             <div class="alert alert-info mensaje_alerta">
                 <strong>Recuerde:</strong><br> Para ingresar por <b><i>primera vez</i></b> al sistema, el administrador del sistema debe haber creado previamente su usuario.<br><br>La contraseña por defecto sera la cedula del empleado, pero la <b><i>primera vez</i></b> que ingrese, se le solicitara automaticamente cambio de la contraseña.
             </div>
-        </form>
+        <!--</form>-->
     </div>
 </body>
