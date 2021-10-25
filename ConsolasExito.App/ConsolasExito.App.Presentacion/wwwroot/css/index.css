@@ -155,7 +155,7 @@
 	.seccion_crear{
 		/*border:  1px solid black;*/
 		border-radius: 5% 5% 5% 5%;
-		margin-top: 20%;
+		margin-top: 5%;
 		height: 83%;
 		width: 90%;
 		padding: 2% 5% 2% 5%;
@@ -203,6 +203,13 @@
 
 #ver_detalles {
 	background-image: url("../img/Fondo6.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+
+#borrar{
+	background-image: url("../img/Fondo9.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;  
 	background-size: cover;

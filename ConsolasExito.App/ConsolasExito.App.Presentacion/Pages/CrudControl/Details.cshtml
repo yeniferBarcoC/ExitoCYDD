@@ -22,45 +22,47 @@
         <form class="pt-3 pb-3 seccion_login_2">
             <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Detalle control</h1>
             <dl class="row">
-                <dt class="col-sm-4">
+                <dt class="col-sm-5">
                     @Html.DisplayNameFor(model => model.Control.TipoControl)
                 </dt>
-                <dd class="col-sm-8">
+                <dd class="col-sm-7">
                     @Html.DisplayFor(model => model.Control.TipoControl)
                 </dd>
-                <dt class="col-sm-4">
+                <dt class="col-sm-5">
                     @Html.DisplayNameFor(model => model.Control.FechaCompra)
                 </dt>
-                <dd class="col-sm-8">
+                <dd class="col-sm-7">
                     @Html.DisplayFor(model => model.Control.FechaCompra)
                 </dd>
-                <dt class="col-sm-4">
+                <dt class="col-sm-5">
                     @Html.DisplayNameFor(model => model.Control.FechaVenta)
                 </dt>
-                <dd class="col-sm-8">
+                <dd class="col-sm-7">
                     @Html.DisplayFor(model => model.Control.FechaVenta)
                 </dd>
-                <dt class="col-sm-4">
+                <dt class="col-sm-5">
                     @Html.DisplayNameFor(model => model.Control.PrecioCompra)
                 </dt>
-                <dd class="col-sm-8">
+                <dd class="col-sm-7">
                     @Html.DisplayFor(model => model.Control.PrecioCompra)
                 </dd>
-                <dt class="col-sm-4">
+                <dt class="col-sm-5">
                     @Html.DisplayNameFor(model => model.Control.PrecioVenta)
                 </dt>
-                <dd class="col-sm-8">
+                <dd class="col-sm-7">
                     @Html.DisplayFor(model => model.Control.PrecioVenta)
                 </dd>
-                <dt class="col-sm-4">
+                <dt class="col-sm-5">
                     @Html.DisplayNameFor(model => model.Control.TipoProducto)
                 </dt>
-                <dd class="col-sm-8">
+                <dd class="col-sm-7">
                     @Html.DisplayFor(model => model.Control.TipoProducto)
                 </dd>
             </dl>
-            <div class="col-md-12"> 
-                <a asp-page="./Edit" asp-route-id="@Model.Control.Id">Editar</a> |
+            <div class="col-md-3 ms-md-auto"> 
+                <a class="btn btn-primary"  asp-page="./Edit" asp-route-id="@Model.Control.Id">Editar</a>
+            </div>
+            <div class="col-md-6">
                 <a asp-page="./Index">Volver a la lista</a>
             </div>
         </form>

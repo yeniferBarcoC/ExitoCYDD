@@ -26,11 +26,11 @@
                 
             </div>
             <div class="col-sm-8 align-self-start">
-                <div class="row pb-2 align-self-start">
+                <div class="pb-2 align-self-start">
                     <div class="seccion_crear">
-                        <form class="row g-3">
+                        <!--<form class="row g-3">-->
                             <h1 style="text-align: center; margin-bottom:3%; margin-top: -2.5%;">Crear un usuario</h1>
-                            <form class="needs-validation" novalidate method="post">
+                            <form class="needs-validation row g-3" method="post">
                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                 <div class="form-group col-md-4">
                                     <label asp-for="Empleado.Cedula" class="control-label"></label>
@@ -69,17 +69,25 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label asp-for="Empleado.TipoEmpleado" class="control-label"></label>
-                                    <select asp-for="Empleado.TipoEmpleado" class="form-control"></select>
+                                    <select asp-for="Empleado.TipoEmpleado" class="form-select">
+                                        <option selected>--Seleccione un usuario--</option>
+                                        <option value="0" >ADMINISTRADOR_COMPRAS</option>
+                                        <option value="1" >ADMINISTRADOR_SISTEMA</option>
+                                        <option value="2" >ADMINISTRADOR_VENTAS</option>
+                                        <option value="3" >EMPLEADO_VENTAS</option>
+                                    </select>
                                     <span asp-validation-for="Empleado.TipoEmpleado" class="text-danger"></span>
                                 </div>
+                                
                                 <div class="form-group col-md-3 ms-md-auto">
-                                    <input type="submit" value="Comprar" class="btn btn-primary" />
+                                    <input type="submit" value="Crear" class="btn btn-primary" />
+                                    <span class="text-danger">@Model.MensajeInvalido</span> 
                                 </div>
                                 <div class="form-group col-md-6 ">
                                     <a asp-page="Index">Volver a la lista</a>
                                 </div>
                             </form>
-                        </form>
+                        <!--</form>-->
                     </div>
                 </div> 
             </div>
