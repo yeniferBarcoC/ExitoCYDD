@@ -77,8 +77,10 @@
                     @Html.DisplayFor(model => model.VideoJuego.TipoProducto)
                 </dd>
             </dl>
-            <div class="col-md-12" >
-                <a asp-page="./Edit" asp-route-id="@Model.VideoJuego.Id">Editar</a> |
+            <div class="col-md-3 ms-md-auto" >
+                <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.VideoJuego.Id">Editar</a>
+            </div>
+            <div class="col-md-6">
                 <a asp-page="./Index">Volver a la lista</a>
             </div>
         </form>
